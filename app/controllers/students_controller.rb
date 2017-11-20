@@ -9,7 +9,7 @@ class StudentsController < ApplicationController
       end
 
       def show
-
+        @student = student.find(params[:id])
       end
 
       def edit
