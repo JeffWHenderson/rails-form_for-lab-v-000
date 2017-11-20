@@ -17,7 +17,7 @@ class StudentsController < ApplicationController
       end
 
       def update
-
+        
       end
 
     private
