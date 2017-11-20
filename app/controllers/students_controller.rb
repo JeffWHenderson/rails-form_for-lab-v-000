@@ -9,11 +9,11 @@ class StudentsController < ApplicationController
       end
 
       def show
-        @student = student.find(params[:id])
+        @student = Student.find(params[:id])
       end
 
       def edit
-        @student = student.find(params[:id])
+        @student = Student.find(params[:id])
       end
 
       def update
