@@ -1,2 +1,2 @@
-class School_class < ActiveRecord::Base
+class SchoolClass < ActiveRecord::Base
 end
