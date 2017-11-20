@@ -311,3 +311,16 @@ ActionView::MissingTemplate (Missing template students/create, application/creat
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (42.6ms)
+
+
+Started POST "/students" for 74.139.8.180 at 2017-11-20 05:58:27 +0000
+Cannot render console from 74.139.8.180! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8WksvyOMCNyflvphc2I3XDnd5sYKd9cZYg4bFNzKTKLYtqdMghZdIm5jB43UWR+swX4/WTA88+YZcByYHiFgdQ==", "student"=>{"first_name"=>"arya", "last_name"=>"stark"}, "commit"=>"Create Student"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: school_class):
+  app/controllers/students_controller.rb:27:in `school_class_params'
+  app/controllers/students_controller.rb:7:in `create'
+
+
