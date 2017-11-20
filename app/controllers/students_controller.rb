@@ -4,9 +4,8 @@ class StudentsController < ApplicationController
       end
 
       def create
-        school_class_params(params)
-        # @student = Student.create(school_class_params(params))
-        # redirect_to student_path(@student)
+        @student = Student.create(school_class_params(params))
+        redirect_to student_path(@student)
       end
 
       def show
