@@ -527,3 +527,17 @@ Processing by StudentsController#edit as HTML
   [1m[36mStudent Load (0.6ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 1]]
   Rendered students/edit.html.erb within layouts/application (2.5ms)
 Completed 200 OK in 31ms (Views: 28.5ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/students/1" for 74.139.8.180 at 2017-11-20 06:09:23 +0000
+Cannot render console from 74.139.8.180! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UH8HkFyE/+6lKKfIJklg0R7s01v/FZKqFjuTfeyKKdt5oIxj/R6qEFTdWiSBckgh5k8KxMVetlVtRZTxLmEFDA==", "student"=>{"first_name"=>"Jordan", "last_name"=>"Hudgens"}, "commit"=>"Update Student", "id"=>"1"}
+Unpermitted parameters: first_name, last_name
+  [1m[35mStudent Load (0.2ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 24ms (ActiveRecord: 1.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Student with 'id'={}):
+  app/controllers/students_controller.rb:20:in `update'
+
+
