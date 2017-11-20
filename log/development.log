@@ -195,3 +195,10 @@ Cannot render console from 74.139.8.180! Allowed networks: 127.0.0.1, ::1, 127.0
 Processing by StudentsController#new as HTML
   Rendered students/new.html.erb within layouts/application (30.2ms)
 Completed 200 OK in 195ms (Views: 179.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/students/new" for 74.139.8.180 at 2017-11-20 05:55:10 +0000
+Cannot render console from 74.139.8.180! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
